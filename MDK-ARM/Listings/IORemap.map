@@ -1,0 +1,342 @@
+Component: ARM Compiler 6.16 Tool: armlink [5dfeaa00]
+
+==============================================================================
+
+Section Cross References
+
+    startup_n32g43x.o(RESET) refers to startup_n32g43x.o(STACK) for __initial_sp
+    startup_n32g43x.o(RESET) refers to startup_n32g43x.o(.text) for Reset_Handler
+    startup_n32g43x.o(RESET) refers to n32g43x_it.o(.text) for NMI_Handler
+    startup_n32g43x.o(RESET) refers to ir.o(.text) for EXTI2_IRQHandler
+    startup_n32g43x.o(RESET) refers to counter.o(.text) for TIM1_UP_IRQHandler
+    startup_n32g43x.o(RESET) refers to i2c_slave_n32g43x.o(.text) for I2C2_EV_IRQHandler
+    startup_n32g43x.o(RESET) refers to bsp_uart.o(.text) for USART1_IRQHandler
+    startup_n32g43x.o(.text) refers to system_n32g43x.o(.text) for SystemInit
+    startup_n32g43x.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    system_n32g43x.o(.text) refers to system_n32g43x.o(.data.SystemCoreClock) for SystemCoreClock
+    system_n32g43x.o(.text) refers to system_n32g43x.o(.rodata.MSIClockTable) for MSIClockTable
+    system_n32g43x.o(.text) refers to system_n32g43x.o(.rodata.AHBPrescTable) for AHBPrescTable
+    system_n32g43x.o(.ARM.exidx) refers to system_n32g43x.o(.text) for [Anonymous Symbol]
+    misc.o(.ARM.exidx) refers to misc.o(.text) for [Anonymous Symbol]
+    n32g43x_adc.o(.text) refers to n32g43x_rcc.o(.text) for RCC_EnableAHBPeriphReset
+    n32g43x_adc.o(.ARM.exidx) refers to n32g43x_adc.o(.text) for [Anonymous Symbol]
+    n32g43x_can.o(.text) refers to n32g43x_rcc.o(.text) for RCC_EnableAPB1PeriphReset
+    n32g43x_can.o(.ARM.exidx) refers to n32g43x_can.o(.text) for [Anonymous Symbol]
+    n32g43x_comp.o(.text) refers to n32g43x_rcc.o(.text) for RCC_EnableAPB1PeriphReset
+    n32g43x_comp.o(.ARM.exidx) refers to n32g43x_comp.o(.text) for [Anonymous Symbol]
+    n32g43x_crc.o(.ARM.exidx) refers to n32g43x_crc.o(.text) for [Anonymous Symbol]
+    n32g43x_dac.o(.text) refers to n32g43x_rcc.o(.text) for RCC_EnableAPB1PeriphReset
+    n32g43x_dac.o(.ARM.exidx) refers to n32g43x_dac.o(.text) for [Anonymous Symbol]
+    n32g43x_dbg.o(.ARM.exidx) refers to n32g43x_dbg.o(.text) for [Anonymous Symbol]
+    n32g43x_dma.o(.ARM.exidx) refers to n32g43x_dma.o(.text) for [Anonymous Symbol]
+    n32g43x_exti.o(.ARM.exidx) refers to n32g43x_exti.o(.text) for [Anonymous Symbol]
+    n32g43x_flash.o(.ARM.exidx) refers to n32g43x_flash.o(.text) for [Anonymous Symbol]
+    n32g43x_gpio.o(.text) refers to n32g43x_rcc.o(.text) for RCC_EnableAPB2PeriphReset
+    n32g43x_gpio.o(.ARM.exidx) refers to n32g43x_gpio.o(.text) for [Anonymous Symbol]
+    n32g43x_i2c.o(.text) refers to n32g43x_rcc.o(.text) for RCC_EnableAPB1PeriphReset
+    n32g43x_i2c.o(.ARM.exidx) refers to n32g43x_i2c.o(.text) for [Anonymous Symbol]
+    n32g43x_iwdg.o(.ARM.exidx) refers to n32g43x_iwdg.o(.text) for [Anonymous Symbol]
+    n32g43x_lptim.o(.text) refers to n32g43x_rcc.o(.text) for RCC_EnableRETPeriphReset
+    n32g43x_lptim.o(.ARM.exidx) refers to n32g43x_lptim.o(.text) for [Anonymous Symbol]
+    n32g43x_lpuart.o(.text) refers to n32g43x_rcc.o(.text) for RCC_EnableRETPeriphReset
+    n32g43x_lpuart.o(.ARM.exidx) refers to n32g43x_lpuart.o(.text) for [Anonymous Symbol]
+    n32g43x_opamp.o(.text) refers to n32g43x_rcc.o(.text) for RCC_EnableAPB1PeriphReset
+    n32g43x_opamp.o(.ARM.exidx) refers to n32g43x_opamp.o(.text) for [Anonymous Symbol]
+    n32g43x_pwr.o(.text) refers to n32g43x_rcc.o(.text) for RCC_EnableAPB1PeriphReset
+    n32g43x_pwr.o(.text) refers to n32g43x_flash.o(.text) for FLASH_SetLatency
+    n32g43x_pwr.o(.ARM.exidx) refers to n32g43x_pwr.o(.text) for [Anonymous Symbol]
+    n32g43x_rcc.o(.text) refers to n32g43x_rcc.o(.rodata.s_msiClockTable) for s_msiClockTable
+    n32g43x_rcc.o(.text) refers to n32g43x_rcc.o(.rodata.s_ApbAhbPresTable) for s_ApbAhbPresTable
+    n32g43x_rcc.o(.text) refers to n32g43x_rcc.o(.rodata.s_AdcHclkPresTable) for s_AdcHclkPresTable
+    n32g43x_rcc.o(.text) refers to n32g43x_rcc.o(.rodata.s_AdcPllClkPresTable) for s_AdcPllClkPresTable
+    n32g43x_rcc.o(.ARM.exidx) refers to n32g43x_rcc.o(.text) for [Anonymous Symbol]
+    n32g43x_rtc.o(.ARM.exidx) refers to n32g43x_rtc.o(.text) for [Anonymous Symbol]
+    n32g43x_spi.o(.text) refers to n32g43x_rcc.o(.text) for RCC_EnableAPB2PeriphReset
+    n32g43x_spi.o(.ARM.exidx) refers to n32g43x_spi.o(.text) for [Anonymous Symbol]
+    n32g43x_tim.o(.text) refers to n32g43x_rcc.o(.text) for RCC_EnableAPB2PeriphReset
+    n32g43x_tim.o(.ARM.exidx) refers to n32g43x_tim.o(.text) for [Anonymous Symbol]
+    n32g43x_tsc.o(.text) refers to n32g43x_rcc.o(.text) for RCC_EnableAPB1PeriphClk
+    n32g43x_tsc.o(.text) refers to n32g43x_pwr.o(.text) for PWR_BackupAccessEnable
+    n32g43x_tsc.o(.ARM.exidx) refers to n32g43x_tsc.o(.text) for [Anonymous Symbol]
+    n32g43x_usart.o(.text) refers to n32g43x_rcc.o(.text) for RCC_EnableAPB2PeriphReset
+    n32g43x_usart.o(.ARM.exidx) refers to n32g43x_usart.o(.text) for [Anonymous Symbol]
+    n32g43x_wwdg.o(.text) refers to n32g43x_rcc.o(.text) for RCC_EnableAPB1PeriphReset
+    n32g43x_wwdg.o(.ARM.exidx) refers to n32g43x_wwdg.o(.text) for [Anonymous Symbol]
+    main.o(.text) refers to main.o(.bss.g_t_reg) for g_t_reg
+    main.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    main.o(.text) refers to main.o(.data.tmp_row) for tmp_row
+    main.o(.text) refers to adc_basic.o(.text) for ADC_GetData
+    main.o(.text) refers to f2d.o(.text) for __aeabi_f2d
+    main.o(.text) refers to dmul.o(.text) for __aeabi_dmul
+    main.o(.text) refers to ddiv.o(.text) for __aeabi_ddiv
+    main.o(.text) refers to d2f.o(.text) for __aeabi_d2f
+    main.o(.text) refers to dadd.o(.text) for __aeabi_dsub
+    main.o(.text) refers to logf.o(i.__hardfp_logf) for __hardfp_logf
+    main.o(.text) refers to main.o(.bss.tepm_DMD) for tepm_DMD
+    main.o(.text) refers to main.o(.bss.DMD_Temp) for DMD_Temp
+    main.o(.text) refers to main.o(.bss.TEMP_DMD) for TEMP_DMD
+    main.o(.text) refers to n32g43x_rcc.o(.text) for RCC_EnableAPB2PeriphClk
+    main.o(.text) refers to n32g43x_gpio.o(.text) for GPIO_InitStruct
+    main.o(.text) refers to uart.o(.bss.TSP_mode_1) for TSP_mode_1
+    main.o(.text) refers to uart.o(.bss.TSP_mode) for TSP_mode
+    main.o(.text) refers to n32g43x_flash.o(.text) for FLASH_Unlock
+    main.o(.text) refers to clkctrl.o(.text) for CLKCTRL_init
+    main.o(.text) refers to bsp_adc.o(.text) for bsp_adc_init
+    main.o(.text) refers to i2c_master.o(.text) for i2c_init
+    main.o(.text) refers to i2c_slave_n32g43x.o(.text) for I2C2_GPIO_init
+    main.o(.text) refers to counter.o(.text) for counter_init
+    main.o(.text) refers to app_softtimer.o(.text) for task
+    main.o(.text) refers to n32g43x_i2c.o(.text) for I2C_Enable
+    main.o(.ARM.exidx) refers to main.o(.text) for [Anonymous Symbol]
+    n32g43x_it.o(.ARM.exidx) refers to n32g43x_it.o(.text) for [Anonymous Symbol]
+    i2c_master.o(.text) refers to n32g43x_gpio.o(.text) for GPIO_ReadInputDataBit
+    i2c_master.o(.text) refers to main.o(.text) for LedInit_in
+    i2c_master.o(.text) refers to n32g43x_start_pins.o(.text) for io_set_pull_off_mode
+    i2c_master.o(.text) refers to i2c_master.o(.bss.errorflag) for errorflag
+    i2c_master.o(.ARM.exidx) refers to i2c_master.o(.text) for [Anonymous Symbol]
+    n32g43x_start_pins.o(.ARM.exidx) refers to n32g43x_start_pins.o(.text) for [Anonymous Symbol]
+    bsp_uart.o(.text) refers to misc.o(.text) for NVIC_PriorityGroupConfig
+    bsp_uart.o(.text) refers to n32g43x_gpio.o(.text) for GPIO_InitStruct
+    bsp_uart.o(.text) refers to n32g43x_rcc.o(.text) for RCC_EnableAPB2PeriphClk
+    bsp_uart.o(.text) refers to n32g43x_usart.o(.text) for USART_Init
+    bsp_uart.o(.text) refers to bsp_uart.o(.bss.is_lr_sent) for is_lr_sent
+    bsp_uart.o(.text) refers to bsp_uart.o(.bss.log_flag) for log_flag
+    bsp_uart.o(.text) refers to bsp_uart.o(.bss.log_number) for log_number
+    bsp_uart.o(.text) refers to bsp_uart.o(.bss.RxBuffer) for RxBuffer
+    bsp_uart.o(.ARM.exidx) refers to bsp_uart.o(.text) for [Anonymous Symbol]
+    adc_basic.o(.text) refers to n32g43x_rcc.o(.text) for RCC_EnableAPB2PeriphClk
+    adc_basic.o(.text) refers to n32g43x_adc.o(.text) for ADC_ConfigClk
+    adc_basic.o(.text) refers to adc_basic.o(.bss.ADC_GPIO_InitStructure) for ADC_GPIO_InitStructure
+    adc_basic.o(.text) refers to n32g43x_gpio.o(.text) for GPIO_InitStruct
+    adc_basic.o(.text) refers to adc_basic.o(.bss.ADC_InitStructure) for ADC_InitStructure
+    adc_basic.o(.ARM.exidx) refers to adc_basic.o(.text) for [Anonymous Symbol]
+    bsp_adc.o(.text) refers to adc_basic.o(.text) for ADC_RCC_Configuration
+    bsp_adc.o(.text) refers to n32g43x_adc.o(.text) for ADC_ConfigRegularChannel
+    bsp_adc.o(.ARM.exidx) refers to bsp_adc.o(.text) for [Anonymous Symbol]
+    pwm.o(.text) refers to n32g43x_rcc.o(.text) for RCC_EnableAPB1PeriphClk
+    pwm.o(.text) refers to n32g43x_gpio.o(.text) for GPIO_InitStruct
+    pwm.o(.text) refers to pwm.o(.bss.TIM_TimeBaseStructure) for TIM_TimeBaseStructure
+    pwm.o(.text) refers to n32g43x_tim.o(.text) for TIM_InitTimeBase
+    pwm.o(.text) refers to pwm.o(.bss.TIM_OCInitStructure) for TIM_OCInitStructure
+    pwm.o(.text) refers to n32g43x_dbg.o(.text) for DBG_ConfigPeriph
+    pwm.o(.text) refers to pwm.o(.bss.Channel1Pulse) for Channel1Pulse
+    pwm.o(.text) refers to pwm.o(.bss.Channel2Pulse) for Channel2Pulse
+    pwm.o(.text) refers to pwm.o(.bss.Channel3Pulse) for Channel3Pulse
+    pwm.o(.text) refers to pwm.o(.bss.Channel4Pulse) for Channel4Pulse
+    pwm.o(.ARM.exidx) refers to pwm.o(.text) for [Anonymous Symbol]
+    clkctrl.o(.text) refers to app_log.o(.text) for log_init
+    clkctrl.o(.text) refers to clkctrl.o(.rodata.str1.1) for .L.str
+    clkctrl.o(.text) refers to printfa.o(i.__0printf) for printf
+    clkctrl.o(.text) refers to clkctrl.o(.bss.RCC_ClockFreq) for RCC_ClockFreq
+    clkctrl.o(.text) refers to n32g43x_rcc.o(.text) for RCC_GetClocksFreqValue
+    clkctrl.o(.text) refers to clkctrl.o(.bss.HSIStartUpStatus) for HSIStartUpStatus
+    clkctrl.o(.text) refers to n32g43x_flash.o(.text) for FLASH_PrefetchBufSet
+    clkctrl.o(.text) refers to clkctrl.o(.bss.HSEStartUpStatus) for HSEStartUpStatus
+    clkctrl.o(.ARM.exidx) refers to clkctrl.o(.text) for [Anonymous Symbol]
+    app_log.o(.text) refers to bsp_uart.o(.text) for bsp_uart_api_init
+    app_log.o(.ARM.exidx) refers to app_log.o(.text) for [Anonymous Symbol]
+    bsp_focal_dz24.o(.text) refers to n32g43x_rcc.o(.text) for RCC_EnableAPB2PeriphClk
+    bsp_focal_dz24.o(.text) refers to n32g43x_gpio.o(.text) for GPIO_InitStruct
+    bsp_focal_dz24.o(.text) refers to n32g43x_exti.o(.text) for EXTI_InitPeripheral
+    bsp_focal_dz24.o(.text) refers to misc.o(.text) for NVIC_Init
+    bsp_focal_dz24.o(.text) refers to n32g43x_start_pins.o(.text) for io_set_low
+    bsp_focal_dz24.o(.text) refers to adc_basic.o(.text) for ADC_GetData
+    bsp_focal_dz24.o(.text) refers to f2d.o(.text) for __aeabi_f2d
+    bsp_focal_dz24.o(.text) refers to dmul.o(.text) for __aeabi_dmul
+    bsp_focal_dz24.o(.text) refers to ddiv.o(.text) for __aeabi_ddiv
+    bsp_focal_dz24.o(.text) refers to d2f.o(.text) for __aeabi_d2f
+    bsp_focal_dz24.o(.text) refers to dcmpge.o(.text) for __aeabi_dcmpge
+    bsp_focal_dz24.o(.ARM.exidx) refers to bsp_focal_dz24.o(.text) for [Anonymous Symbol]
+    app_softtimer.o(.text) refers to app_softtimer.o(.bss.softtimer_table) for softtimer_table
+    app_softtimer.o(.text) refers to counter.o(.text) for counter_get_uptime
+    app_softtimer.o(.text) refers to counter.o(.bss.flag_20ms) for flag_20ms
+    app_softtimer.o(.text) refers to main.o(.bss.count) for count
+    app_softtimer.o(.text) refers to app_softtimer.o(.bss.count) for count
+    app_softtimer.o(.text) refers to main.o(.text) for HC595SendData
+    app_softtimer.o(.text) refers to counter.o(.bss.flag_700us) for flag_700us
+    app_softtimer.o(.ARM.exidx) refers to app_softtimer.o(.text) for [Anonymous Symbol]
+    i2c_slave_n32g43x.o(.text) refers to misc.o(.text) for NVIC_Init
+    i2c_slave_n32g43x.o(.text) refers to n32g43x_rcc.o(.text) for RCC_EnableAPB2PeriphClk
+    i2c_slave_n32g43x.o(.text) refers to n32g43x_gpio.o(.text) for GPIO_InitStruct
+    i2c_slave_n32g43x.o(.text) refers to n32g43x_i2c.o(.text) for I2C_DeInit
+    i2c_slave_n32g43x.o(.text) refers to i2c_slave_n32g43x.o(.bss.rxDataNum) for rxDataNum
+    i2c_slave_n32g43x.o(.text) refers to i2c_slave_n32g43x.o(.bss.data_buf) for data_buf
+    i2c_slave_n32g43x.o(.text) refers to i2c_slave_n32g43x.o(.bss.read_add) for read_add
+    i2c_slave_n32g43x.o(.text) refers to i2c_slave_n32g43x.o(.bss.R_temp) for R_temp
+    i2c_slave_n32g43x.o(.text) refers to i2c_slave_n32g43x.o(.bss.G_temp) for G_temp
+    i2c_slave_n32g43x.o(.text) refers to i2c_slave_n32g43x.o(.bss.B_temp) for B_temp
+    i2c_slave_n32g43x.o(.text) refers to i2c_slave_n32g43x.o(.bss.BP_temp) for BP_temp
+    i2c_slave_n32g43x.o(.text) refers to i2c_slave_n32g43x.o(.bss.DR_temp) for DR_temp
+    i2c_slave_n32g43x.o(.text) refers to i2c_slave_n32g43x.o(.bss.R_FAN_SPEED) for R_FAN_SPEED
+    i2c_slave_n32g43x.o(.text) refers to i2c_slave_n32g43x.o(.bss.G_FAN_SPEED) for G_FAN_SPEED
+    i2c_slave_n32g43x.o(.text) refers to i2c_slave_n32g43x.o(.bss.B_FAN_SPEED) for B_FAN_SPEED
+    i2c_slave_n32g43x.o(.text) refers to i2c_slave_n32g43x.o(.bss.BP_FAN_SPEED) for BP_FAN_SPEED
+    i2c_slave_n32g43x.o(.text) refers to i2c_slave_n32g43x.o(.bss.DR_FAN_SPEED) for DR_FAN_SPEED
+    i2c_slave_n32g43x.o(.text) refers to i2c_slave_n32g43x.o(.bss.BP_current) for BP_current
+    i2c_slave_n32g43x.o(.text) refers to i2c_slave_n32g43x.o(.bss.FILTER_PI) for FILTER_PI
+    i2c_slave_n32g43x.o(.text) refers to i2c_slave_n32g43x.o(.bss.motor_step) for motor_step
+    i2c_slave_n32g43x.o(.text) refers to i2c_slave_n32g43x.o(.bss.r_current) for r_current
+    i2c_slave_n32g43x.o(.text) refers to i2c_slave_n32g43x.o(.bss.g_current) for g_current
+    i2c_slave_n32g43x.o(.text) refers to i2c_slave_n32g43x.o(.bss.b_current) for b_current
+    i2c_slave_n32g43x.o(.text) refers to i2c_slave_n32g43x.o(.bss.PI_motor_zoom) for PI_motor_zoom
+    i2c_slave_n32g43x.o(.text) refers to i2c_slave_n32g43x.o(.bss.PI_motor_focal) for PI_motor_focal
+    i2c_slave_n32g43x.o(.text) refers to i2c_slave_n32g43x.o(.bss.PI_motor_flag) for PI_motor_flag
+    i2c_slave_n32g43x.o(.text) refers to i2c_slave_n32g43x.o(.bss.PI_motor_focal_c) for PI_motor_focal_c
+    i2c_slave_n32g43x.o(.text) refers to i2c_slave_n32g43x.o(.bss.PI_motor_zoom_c) for PI_motor_zoom_c
+    i2c_slave_n32g43x.o(.ARM.exidx) refers to i2c_slave_n32g43x.o(.text) for [Anonymous Symbol]
+    counter.o(.text) refers to n32g43x_rcc.o(.text) for RCC_EnableAPB2PeriphClk
+    counter.o(.text) refers to misc.o(.text) for NVIC_PriorityGroupConfig
+    counter.o(.text) refers to n32g43x_tim.o(.text) for TIM_InitTimeBase
+    counter.o(.text) refers to counter.o(.bss.time1_counter1) for time1_counter1
+    counter.o(.text) refers to counter.o(.bss.time1_counter3) for time1_counter3
+    counter.o(.text) refers to counter.o(.bss.time1_counter2) for time1_counter2
+    counter.o(.text) refers to counter.o(.bss.flag_700us) for flag_700us
+    counter.o(.text) refers to counter.o(.bss.flag_20ms) for flag_20ms
+    counter.o(.text) refers to counter.o(.bss.counter_uptime) for counter_uptime
+    counter.o(.ARM.exidx) refers to counter.o(.text) for [Anonymous Symbol]
+    app_df.o(.text) refers to n32g43x_rcc.o(.text) for RCC_EnableAPB2PeriphClk
+    app_df.o(.text) refers to n32g43x_gpio.o(.text) for GPIO_InitStruct
+    app_df.o(.text) refers to i2c_slave_n32g43x.o(.bss.FILTER_PI) for FILTER_PI
+    app_df.o(.text) refers to app_df.o(.bss.df_pi_Flag) for df_pi_Flag
+    app_df.o(.text) refers to uart.o(.bss.flag_df) for flag_df
+    app_df.o(.text) refers to app_df.o(.bss.df_step) for df_step
+    app_df.o(.text) refers to main.o(.text) for HC595SendData_1
+    app_df.o(.text) refers to app_df.o(.bss.Recycle) for Recycle
+    app_df.o(.text) refers to app_df.o(.bss.df_step_number) for df_step_number
+    app_df.o(.text) refers to app_df.o(.bss.Cnt) for Cnt
+    app_df.o(.text) refers to app_df.o(.bss.df_direction) for df_direction
+    app_df.o(.text) refers to app_df.o(.bss.filter_reset) for filter_reset
+    app_df.o(.ARM.exidx) refers to app_df.o(.text) for [Anonymous Symbol]
+    uart.o(.text) refers to bsp_uart.o(.bss.log_flag) for log_flag
+    uart.o(.text) refers to bsp_uart.o(.bss.RxBuffer) for RxBuffer
+    uart.o(.text) refers to uart.o(.bss.d) for d
+    uart.o(.text) refers to i2c_master.o(.text) for i2c_write_block
+    uart.o(.text) refers to uart.o(.bss.TSP_mode) for TSP_mode
+    uart.o(.text) refers to uart.o(.bss.TSP_mode_1) for TSP_mode_1
+    uart.o(.text) refers to uart.o(.bss.flag_df) for flag_df
+    uart.o(.text) refers to main.o(.text) for Flash_Read
+    uart.o(.text) refers to uart.o(.bss.pwn_count) for pwn_count
+    uart.o(.text) refers to uart.o(.bss.addr) for addr
+    uart.o(.text) refers to uart.o(.bss.user_buf2) for user_buf2
+    uart.o(.text) refers to memseta.o(.text) for __aeabi_memset
+    uart.o(.text) refers to main.o(.bss.tepm_DMD) for tepm_DMD
+    uart.o(.text) refers to i2c_slave_n32g43x.o(.text) for I2C2_GPIO_init
+    uart.o(.text) refers to n32g43x_usart.o(.text) for USART_ConfigInt
+    uart.o(.ARM.exidx) refers to uart.o(.text) for [Anonymous Symbol]
+    bsp_filtermotor_soft_subdivision.o(.text) refers to utils.o(.text) for delay_us_block
+    bsp_filtermotor_soft_subdivision.o(.text) refers to bsp_filtermotor_soft_subdivision.o(.bss.filtermotor_ctl) for filtermotor_ctl
+    bsp_filtermotor_soft_subdivision.o(.text) refers to bsp_mult_pwm.o(.text) for bsp_pwm_set_dutycycle_TIM1_8
+    bsp_filtermotor_soft_subdivision.o(.text) refers to bsp_filtermotor_soft_subdivision.o(.rodata.Filtermotor_phase_sin_1_duty) for Filtermotor_phase_sin_1_duty
+    bsp_filtermotor_soft_subdivision.o(.text) refers to bsp_filtermotor_soft_subdivision.o(.rodata.Filtermotor_phase_sin_2_duty) for Filtermotor_phase_sin_2_duty
+    bsp_filtermotor_soft_subdivision.o(.text) refers to bsp_filtermotor_soft_subdivision.o(.rodata.Filtermotor_phase_cos_1_duty) for Filtermotor_phase_cos_1_duty
+    bsp_filtermotor_soft_subdivision.o(.text) refers to bsp_filtermotor_soft_subdivision.o(.rodata.Filtermotor_phase_cos_2_duty) for Filtermotor_phase_cos_2_duty
+    bsp_filtermotor_soft_subdivision.o(.ARM.exidx) refers to bsp_filtermotor_soft_subdivision.o(.text) for [Anonymous Symbol]
+    bsp_mult_pwm.o(.text) refers to bsp_mult_pwm.o(.bss.TIM4_change) for TIM4_change
+    bsp_mult_pwm.o(.text) refers to bsp_mult_pwm.o(.bss.TIM2_change) for TIM2_change
+    bsp_mult_pwm.o(.text) refers to bsp_mult_pwm.o(.bss.TIMx_pwm) for TIMx_pwm
+    bsp_mult_pwm.o(.ARM.exidx) refers to bsp_mult_pwm.o(.text) for [Anonymous Symbol]
+    utils.o(.text) refers to slabs.o(.text) for labs
+    utils.o(.ARM.exidx) refers to utils.o(.text) for [Anonymous Symbol]
+    ir.o(.text) refers to n32g43x_rcc.o(.text) for RCC_EnableAPB2PeriphClk
+    ir.o(.text) refers to n32g43x_gpio.o(.text) for GPIO_InitStruct
+    ir.o(.text) refers to n32g43x_exti.o(.text) for EXTI_InitPeripheral
+    ir.o(.text) refers to misc.o(.text) for NVIC_Init
+    ir.o(.text) refers to i2c_master.o(.text) for __delay_cycles
+    ir.o(.text) refers to ir.o(.bss.hw_jsm) for hw_jsm
+    ir.o(.text) refers to ir.o(.bss.hw_jsbz) for hw_jsbz
+    ir.o(.ARM.exidx) refers to ir.o(.text) for [Anonymous Symbol]
+    logf.o(i.__hardfp_logf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    logf.o(i.__hardfp_logf) refers to funder.o(i.__mathlib_flt_infnan) for __mathlib_flt_infnan
+    logf.o(i.__hardfp_logf) refers to errno.o(i.__set_errno) for __set_errno
+    logf.o(i.__hardfp_logf) refers to funder.o(i.__mathlib_flt_invalid) for __mathlib_flt_invalid
+    logf.o(i.__hardfp_logf) refers to funder.o(i.__mathlib_flt_divzero) for __mathlib_flt_divzero
+    logf.o(i.__hardfp_logf) refers to logf.o(.constdata) for .constdata
+    logf.o(i.__softfp_logf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    logf.o(i.__softfp_logf) refers to logf.o(i.__hardfp_logf) for __hardfp_logf
+    logf.o(i.logf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    logf.o(i.logf) refers to logf.o(i.__hardfp_logf) for __hardfp_logf
+    logf.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    printfa.o(i.__0fprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0fprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0fprintf) refers to bsp_uart.o(.text) for fputc
+    printfa.o(i.__0printf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0printf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0printf) refers to bsp_uart.o(.text) for fputc
+    printfa.o(i.__0printf) refers to stdout.o(.data) for __stdout
+    printfa.o(i.__0snprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0snprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0snprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0sprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0sprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0sprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i.__0vfprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vfprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vfprintf) refers to bsp_uart.o(.text) for fputc
+    printfa.o(i.__0vprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vprintf) refers to bsp_uart.o(.text) for fputc
+    printfa.o(i.__0vprintf) refers to stdout.o(.data) for __stdout
+    printfa.o(i.__0vsnprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0vsprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i._fp_digits) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._fp_digits) refers to dmul.o(.text) for __aeabi_dmul
+    printfa.o(i._fp_digits) refers to ddiv.o(.text) for __aeabi_ddiv
+    printfa.o(i._fp_digits) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    printfa.o(i._fp_digits) refers to dadd.o(.text) for __aeabi_dadd
+    printfa.o(i._fp_digits) refers to dfixul.o(.text) for __aeabi_d2ulz
+    printfa.o(i._fp_digits) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_pre_padding) for _printf_pre_padding
+    printfa.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_post_padding) for _printf_post_padding
+    printfa.o(i._printf_core) refers to printfa.o(i._fp_digits) for _fp_digits
+    printfa.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printfa.o(i._printf_post_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_pre_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._snputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._sputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dadd.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dadd.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers to llsshr.o(.text) for __aeabi_lasr
+    dadd.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dmul.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ddiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ddiv.o(.text) refers to depilogue.o(.text) for _double_round
+    dcmpge.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    f2d.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    d2f.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    d2f.o(.text) refers to fepilogue.o(.text) for _float_round
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_n32g43x.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_n32g43x.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(.text) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(.text) for main
+    uldiv.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    uldiv.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    errno.o(i.__aeabi_errno_addr) refers to errno.o(.data) for .data
+    errno.o(i.__read_errno) refers to errno.o(.data) for .data
+    errno.o(i.__set_errno) refers to errno.o(.data) for .data
+    fepilogue.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    depilogue.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    dfixul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixul.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    dfixul.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    cdrcmple.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
